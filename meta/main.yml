@@ -7,7 +7,7 @@ galaxy_info:
   - name: Ubuntu
     versions:
     - wily
-
   galaxy_tags:
     - learning
     - exercism
+dependencies: []
