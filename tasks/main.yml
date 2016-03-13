@@ -1,6 +1,6 @@
 ---
 - block:
-  
+
   - name: Download exercism.io CLI installer
     get_url:
       url: https://raw.githubusercontent.com/exercism/cli-www/master/public/install

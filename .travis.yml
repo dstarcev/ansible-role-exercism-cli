@@ -3,7 +3,7 @@ language: python
 python: "2.7"
 
 # Use the new container infrastructure
-sudo: false
+sudo: true
 
 # Install ansible
 addons:
@@ -22,8 +22,8 @@ install:
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
 script:
-  # Basic role syntax check
-  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
+  - ansible-playbook test.yml -i "localhost," --syntax-check
+  - ansible-playbook test.yml -i "localhost," -c local -s
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
