@@ -1,0 +1,3 @@
+# just a stub playbook to make Vagrant install Ansible
+- hosts: all
+  gather_facts: no

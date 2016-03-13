@@ -1,0 +1,15 @@
+---
+- block:
+  
+  - name: Download exercism.io CLI installer
+    get_url:
+      url: https://raw.githubusercontent.com/exercism/cli-www/master/public/install
+      dest: /opt/exercism-install
+      mode: 0770
+
+  - name: Install exercism.io CLI
+    command: /opt/exercism-install
+    args:
+      creates: /usr/local/bin/exercism
+
+  become: yes
