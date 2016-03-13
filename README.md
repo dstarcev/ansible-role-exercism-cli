@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dstarcev/ansible-role-exercism-cli.svg?branch=master)](https://travis-ci.org/dstarcev/ansible-role-exercism-cli)
+
 Exercism CLI ansible role
 =========
 
